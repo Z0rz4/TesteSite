@@ -1,0 +1,347 @@
+        :root {
+            --primary: #e0160c;
+            --primary-dark: #e05a00;
+            --dark: #131313;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            height: auto;
+            width: 100%;
+            background-color: var(--dark);
+            color: var(--dark);
+        }
+
+        /* Header com ícone central e tópicos nas laterais */
+        header {
+            background: linear-gradient(180deg, rgb(19, 19, 19) 0%,rgba(19, 19, 19) 40%,  rgba(19, 19, 19) 70%, rgba(1, 2, 3, 0) 100%);
+            backdrop-filter: blur(0.5px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 15px 5%;
+        }
+
+        .nav-container {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-left {
+            justify-content: flex-end;
+            padding-right: 30px;
+        }
+
+        .nav-right {
+            justify-content: flex-start;
+            padding-left: 30px;
+        }
+
+        .nav-container a {
+            text-decoration: none;
+            color: var(--light);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .nav-container a:hover {
+            color: var(--primary);
+        }
+
+        .logo-center {
+            text-align: center;
+        }
+
+        .logo-center a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: var(--light);
+        }
+
+        .logo-center > a > img {
+            height: 100px;
+        } 
+
+        /* Hero Section */
+        .hero {
+            background: radial-gradient(rgba(0, 0, 0, 0.172), rgba(0, 0, 0, 0.444),rgb(19, 19, 19),rgb(19, 19, 19)), url('/src/assets/ChatGPT\ Image\ 14\ de\ set.\ de\ 2026\,\ 22_59_09.png') no-repeat center/cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+            margin-top: 75px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 15px rgba(205, 8, 8, 0.4);
+        }
+
+        .btn-primary:hover {
+            background: #A1CB35;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(81, 255, 0, 0.4);
+        }
+
+        /* Sections General */
+        section {
+            padding: 80px 10%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            color: var(--light);
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 50px;
+            font-weight: 700;
+            position: relative;
+        }
+
+        .features > h2{
+            color: black;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: var(--primary);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        /* Serviços */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-50px);
+            transform: translateY(-5px);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .service-card p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        /* Diferenciais */
+        .features {
+            background: #fff;
+            border-radius: 8px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .feature-item i {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        /* Como Funciona */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            counter-reset: step;
+        }
+
+        .step-box {
+            background: #fff;
+            padding: 30px 20px;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+        }
+
+        .step-box h3 {
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        /* Contato & Pagamento */
+        .contact-payment-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .contact-info h3, .payment-info h3 {
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+
+        .contact-info p, .payment-info p {
+            color: var(--gray);
+            margin-bottom: 15px;
+        }
+
+        .payment-methods {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .partnership-info{
+            margin-top: 10px;
+        }
+
+        .partnership-info > img{
+            height: 40px;
+            position: relative;
+            bottom: 15px;
+        }
+
+
+
+        .payment-badge {
+            background: var(--light);
+            border: 1px solid #ddd;
+            padding: 8px 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Botão Flutuante do WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: transform 0.3s;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsividade para telas menores */
+        @media(max-width: 900px) {
+            .nav-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .nav-left, .nav-right {
+                display: none; /* Em um site real, aqui entraria um menu hamburguer */
+            }
+            .contact-payment-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+        }
