@@ -87,7 +87,7 @@
 
         /* Hero Section */
         .hero {
-            background-image: radial-gradient(rgba(0, 0, 0, 0.172), rgba(0, 0, 0, 0.444),rgb(19, 19, 19),rgb(19, 19, 19)), url('./src/assets/wallpaper.png');
+            background-image: radial-gradient(rgba(0, 0, 0, 0.172), rgba(0, 0, 0, 0.444),rgb(19, 19, 19),rgb(19, 19, 19)), url('./assets/wallpaper.png');
             background-repeat: no-repeat;
             background-size: cover;
             height: 90vh;
