@@ -87,7 +87,7 @@
 
         /* Hero Section */
         .hero {
-            background: radial-gradient(rgba(0, 0, 0, 0.172), rgba(0, 0, 0, 0.444),rgb(19, 19, 19),rgb(19, 19, 19)), url('src/assets/wallpaper.png') no-repeat center/cover;
+            background: radial-gradient(rgba(0, 0, 0, 0.172), rgba(0, 0, 0, 0.444),rgb(19, 19, 19),rgb(19, 19, 19)), url('/src/assets/wallpaper.png') no-repeat center/cover;
             height: 90vh;
             display: flex;
             align-items: center;
