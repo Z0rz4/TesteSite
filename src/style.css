@@ -23,9 +23,6 @@
 
         /* Header com ícone central e tópicos nas laterais */
         header {
-            background-image: radial-gradient(rgba(0, 0, 0, 0.172), rgba(0, 0, 0, 0.444),rgb(19, 19, 19),rgb(19, 19, 19)), url('../assets/wallpaper.png');
-            background-repeat: no-repeat;
-            background-size: cover;
             backdrop-filter: blur(0.5px);
             position: fixed;
             top: 0;
@@ -89,7 +86,9 @@
 
         /* Hero Section */
         .hero {
-            background: radial-gradient(rgba(0, 0, 0, 0.172), rgba(0, 0, 0, 0.444),rgb(19, 19, 19),rgb(19, 19, 19)), url('../assets/wallpaper.png') no-repeat center/cover;
+            background-image: radial-gradient(rgba(0, 0, 0, 0.172), rgba(0, 0, 0, 0.444),rgb(19, 19, 19),rgb(19, 19, 19)), url('../assets/wallpaper.png');
+            background-repeat: no-repeat;
+            background-size: cover;
             height: 90vh;
             display: flex;
             align-items: center;
