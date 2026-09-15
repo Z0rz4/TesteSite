@@ -23,6 +23,7 @@
 
         /* Header com ícone central e tópicos nas laterais */
         header {
+            background: linear-gradient(180deg, rgb(19, 19, 19) 0%,rgba(19, 19, 19) 40%,  rgba(19, 19, 19) 70%, rgba(1, 2, 3, 0) 100%);
             backdrop-filter: blur(0.5px);
             position: fixed;
             top: 0;
@@ -86,7 +87,7 @@
 
         /* Hero Section */
         .hero {
-            background-image: radial-gradient(rgba(0, 0, 0, 0.172), rgba(0, 0, 0, 0.444),rgb(19, 19, 19),rgb(19, 19, 19)), url('./assets/wallpaper.png');
+            background-image: radial-gradient(rgba(0, 0, 0, 0.172), rgba(0, 0, 0, 0.444),rgb(19, 19, 19),rgb(19, 19, 19)), url('/src/assets/wallpaper.png');
             background-repeat: no-repeat;
             background-size: cover;
             height: 90vh;
@@ -330,12 +331,9 @@
 
         /* Responsividade para telas menores */
         @media(max-width: 900px) {
-            body{
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                justify-content: center;
-                text-align: center;
+            header{
+                position: relative;
+                height: 100px;
             }
 
             .nav-container {
@@ -352,8 +350,8 @@
             }
 
             .hero {
-                margin-top: 100px ;
-               height: 50vh;
+               height: auto;
+               background-position-x: center;
             }
 
             .hero-content h1 {
